@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Klee+One:wght@600&display=swap');
+
+* /* asterics are wildcards */
+{
+margin:0;
+padding:0;
+box-sizing: border-box;
+}
+
+header 
+{
+font-family: 'Klee One', cursive;
+text-transform: uppercase;
+background-color: #90be77;
+border-bottom:5px solid #faf0ca;
+padding: 15px 600px 15px 15px; 
+}
+
+.dlogo /* logo for dasypus */
+{
+width: 202px ;
+
+}
+
+nav
+{
+    display: flex; 
+    justify-content: right;
+    gap: 5ch;
+}
+
+nav a 
+{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+
+.dpage
+{
+border:5px solid #90be77;
+}
+
+footer
+{
+background-color: #90be77;
+border-top: 5px solid #faf0ca;
+}
