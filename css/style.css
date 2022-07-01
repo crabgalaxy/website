@@ -1,48 +1,69 @@
-@import url('https://fonts.googleapis.com/css2?family=Klee+One:wght@600&display=swap'); /* Got this from google fonts */
+/* All formatting bits go in here, they modify things in the index */
 
-* /* asterics are wildcards */
-{
-margin:0;
-padding:0;
-box-sizing: border-box;
-}
+
+@import url('https://fonts.googleapis.com/css2?family=Klee+One:wght@600&display=swap'); 
+/* Loads a font from googlefonts so that it displays correctly for everyone */
+
+
+* /* asterics are wildcards this makes it so certain default styles that 
+are annoying are everywhere set to 0 */
+    {
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+
 
 header 
-{
-font-family: 'Klee One', cursive; /* Got this from google fonts */
-text-transform: uppercase;
-background-color: #90be77;
-border-bottom:5px solid #faf0ca;
-padding: 15px 600px 15px 15px; 
-}
+    {
+        font-family: 'Klee One', cursive; /* applies the font loaded from google? */
+        text-transform: uppercase; /* Forces all text to be uppercase while remaining screen reader friendly */
+        background-color: #90be77;
+        border-bottom:5px solid #faf0ca; 
+        padding: 15px 100px 15px 15px; 
+            /* Above bit adds padding to each side (N,E,S,W) if you have only one 
+            number all sides will be that, if two it will alternate going clockwise 
+            starting from the top */
 
-.dlogo /* logo for dasypus */
-{
-width: 202px ;
+    }
 
-}
 
-nav
-{
-    display: flex; 
-    justify-content: right;
-    gap: 5ch;
-}
+.dlogo /* The class style for the Dasypus logo in the top left corner */
+    {
+        width: 202px ; /* Sets the width, scales proportionally since no height it give */
+    }
+
+nav 
+/* This effects all things inside a nav box, right now all those things are text links (a href)
+in the Header and Footer of the page.*/
+    {
+        display: flex; 
+        justify-content: center;
+        gap: 5ch;
+    }
+
 
 nav a 
-{
-    text-decoration: none;
-    color: black;
-    font-size: 25px;
-}
+/* Applies these style parameters to everything that is inside a nav box that is a text link (a href) */
+    {
+        text-decoration: none; 
+        /* Removes all formatting from text, in this case makes it so the text link is not underlined */
+        color: black;
+        /* Forces text to be a certain color, in this case black */
+        font-size: 25px;
+    }
 
 .dpage
-{
-border:5px solid #90be77;
-}
+/* The style for pages for the Dasypus Comic */
+    {
+    border:5px solid #90be77; /* draws a solid green border that is 5 px around the image*/
+    }
+
 
 footer
-{
-background-color: #90be77;
-border-top: 5px solid #faf0ca;
-}
+    {
+        font-family: 'Klee One', cursive; /* Got this from google fonts */
+        text-transform: uppercase;
+        background-color: #90be77;
+        border-top: 5px solid #faf0ca;
+    }
