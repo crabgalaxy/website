@@ -5,98 +5,102 @@
 /* Loads a particular font from googlefonts so that it displays correctly for everyone */
 
 
-* /* asterics are used as wildcards, this styleset  makes it so certain default styles that 
-are annoying are set to 0 everywhere*/
-    {
-        margin:0;
-        padding:0;
-        box-sizing: border-box;
-    }
+    * /* asterics are used as wildcards, this styleset  makes it so certain default styles that 
+    are annoying are set to 0 everywhere*/
+        {
+           margin:0;
+          padding:0;
+          box-sizing: border-box;
+        }
 
-html
-    {
-        scroll-behavior: smooth;
-    }
+    html /*effects browser things*/
+        {
+            scroll-behavior: smooth; /* makes movements on a page scroll smoothly instead of jumping */
+        }
 
-header 
-    {
-        font-family: 'Klee One', cursive; /* applies the font loaded from google? */
-        text-transform: uppercase; /* Forces all text to be uppercase while remaining screen reader friendly */
-        background-color: #90be77;
-        border-bottom:5px solid #faf0ca; 
-        padding: 15px 100px 15px 15px; 
+/*HEADER STYLES*/
+    header 
+        {
+            font-family: 'Klee One', cursive; /* applies the font loaded from google? */
+            text-transform: uppercase; /* Forces all text to be uppercase while remaining screen reader friendly */
+            background-color: #90be77;
+            border-bottom:5px solid #faf0ca; 
+            padding: 15px 100px 15px 15px; 
             /* Above bit adds padding to each side (N,E,S,W) if you have only one 
             number all sides will be that, if two it will alternate going clockwise 
             starting from the top */
+        }
 
-    }
+/*CLASS STYLES*/
 
-.flip
-    {
-        transform: scaleX(-1);
-    }
+    .flip /* class that flips images */
+        {
+            transform: scaleX(-1);
+        }
 
-.dlogo /* The class style for the Dasypus logo in the top left corner */
-    {
-        width: 202px ; /* Sets the width, scales proportionally since no height it give */
-    }
+    .dlogo /* The class style for the Dasypus logo in the top left corner */
+        {
+         width: 202px ; /* Sets the width, scales proportionally since no height it give */
+        }
 
-nav 
-/* This effects all things inside a nav box, right now all those things are text links (a href)
-in the Header and Footer of the page.*/
-    {
-        display: flex; 
-        justify-content: center;
-        gap: 5ch;
-    }
+    .dpage/* The style for pages for the Dasypus Comic */
+        {
+            border:5px solid #90be77; /* draws a solid green border that is 5 px around the comic image*/
+            grid-column: span 2;
+            grid-row: span 2;
+            display: block;
+        }
+
+    .first-button
+        {
+            grid-column-start: 2;
+            justify-self: end;
+        }    
+
+    .bottom-button
+        {
+            align-self: end;
+        }
+
+    .move-button-right
+        {
+            justify-self: right;
+        }
 
 
-nav a 
-/* Applies these style parameters to everything that is inside a nav box that is a text link (a href) */
-    {
-        text-decoration: none; 
-        /* Removes all formatting from text, in this case makes it so the text link is not underlined */
-        color: black;
-        /* Forces text to be a certain color, in this case black */
-        font-size: 25px;
-    }
+/*NAV STYLES*/
+    nav /* This effects all things inside a nav box.*/
 
-.dpage
-/* The style for pages for the Dasypus Comic */
-    {
-        border:5px solid #90be77; /* draws a solid green border that is 5 px around the comic image*/
-        grid-column: span 2;
-        grid-row: span 2;
-        display: block;
-    }
+        {
+            display: flex; 
+            justify-content: center;
+            gap: 5ch;
+        }
 
-main
-    {
-        display: grid;
+
+    nav a /* Applies these style parameters to everything that is inside a nav box */
+
+        {
+            text-decoration: none; 
+            /* Removes all formatting from text, in this case makes it so the text link is not underlined */
+            color: black;
+            /* Forces text to be a certain color, in this case black */
+            font-size: 25px;
+        }
+
+/*MAIN BODY OF THE PAGE*/
+    main
+        {
+            display: grid;
             grid-template-columns: 1fr auto auto 1fr;
             column-gap: 2em;
-    }
+        }
 
-.first-button
-    {
-        grid-column-start: 2;
-        justify-self: end;
-    }    
-
-.bottom-button
-    {
-        align-self: end;
-    }
-
-.move-button-right
-    {
-        justify-self: right;
-    }
-
-footer
-    {
-        font-family: 'Klee One', cursive; /* Got this from google fonts */
-        text-transform: uppercase;
-        background-color: #90be77;
-        border-top: 5px solid #faf0ca;
-    }
+/*FOOTER*/
+    footer
+        {
+            font-family: 'Klee One', cursive; /* Got this from google fonts */
+            text-transform: uppercase;
+            background-color: #90be77;
+            border-top: 5px solid #faf0ca;
+        }
