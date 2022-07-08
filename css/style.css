@@ -2,17 +2,21 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=Klee+One:wght@600&display=swap'); 
-/* Loads a font from googlefonts so that it displays correctly for everyone */
+/* Loads a particular font from googlefonts so that it displays correctly for everyone */
 
 
-* /* asterics are wildcards this makes it so certain default styles that 
-are annoying are everywhere set to 0 */
+* /* asterics are used as wildcards, this styleset  makes it so certain default styles that 
+are annoying are set to 0 everywhere*/
     {
         margin:0;
         padding:0;
         box-sizing: border-box;
     }
 
+html
+    {
+        scroll-behavior: smooth;
+    }
 
 header 
     {
@@ -27,6 +31,10 @@ header
 
     }
 
+.flip
+    {
+        transform: scaleX(-1);
+    }
 
 .dlogo /* The class style for the Dasypus logo in the top left corner */
     {
@@ -56,10 +64,29 @@ nav a
 .dpage
 /* The style for pages for the Dasypus Comic */
     {
-    border:5px solid #90be77; /* draws a solid green border that is 5 px around the image*/
+        border:5px solid #90be77; /* draws a solid green border that is 5 px around the comic image*/
+        grid-column: span 2;
+        grid-row: span 2;
+        display: block;
     }
 
+main
+    {
+        display: grid;
+            grid-template-columns: repeat(4,auto);
+            
+    }
 
+.first-button
+    {
+        grid-column-start: 2;
+        justify-self: end;
+    }    
+
+.bottom-button
+    {
+        align-self: end;
+    }
 footer
     {
         font-family: 'Klee One', cursive; /* Got this from google fonts */
