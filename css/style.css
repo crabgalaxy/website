@@ -8,7 +8,7 @@
     * /* asterics are used as wildcards, this styleset  makes it so certain default styles that 
     are annoying are set to 0 everywhere*/
         {
-           margin:0;
+          margin:0;
           padding:0;
           box-sizing: border-box;
         }
@@ -49,13 +49,18 @@
             grid-column: span 2;
             grid-row: span 2;
             display: block;
+            max-width: 800px;
         }
 
     .first-button
         {
             grid-column-start: 2;
-            justify-self: end;
-        }    
+            justify-self: end; 
+        }
+    .first-button img, .last-button img
+        {
+            width: 75px;
+        }
 
     .bottom-button
         {
@@ -67,6 +72,10 @@
             justify-self: right;
         }
 
+    .arrow-button
+        {
+            width: 50px;
+        }
 
 /*NAV STYLES*/
     nav /* This effects all things inside a nav box.*/
@@ -93,7 +102,9 @@
         {
             display: grid;
             grid-template-columns: 1fr auto auto 1fr;
+            row-gap: 2em;
             column-gap: 2em;
+            padding: 2em 0;
         }
 
 /*FOOTER*/
