@@ -1,8 +1,33 @@
 {
 
+    "title": "Dasypus",
+    "pages":
+    [
+        {
+            "chapter": 
+            {
+                "number": 0,
+                "name": "Fruity Peril"
+            },
+            "page": 1,
+            "date": 1657843411124,
+            "description": "",
+            "characters": ["Pam", "Vic"],
+            "file": "images/dasypuspgs/dasuypus001.png" 
+        },
+        {
+            "chapter": 
+            {
+                "number": 0,
+                "name": "Fruity Peril"
+            },
+            "page": 2,
+            "date": 1657843411124,
+            "description": "",
+            "characters": ["Pam", "Shopkeeper"],
+            "file": "images/dasypuspgs/dasuypus002.png"  
+        }
+    ]
 
 
-
-
-    
 }
